@@ -132,10 +132,21 @@
                                     <segue destination="3eL-7I-iYf" kind="show" id="W25-R2-8pQ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="morando" translatesAutoresizingMaskIntoConstraints="NO" id="5NG-GI-yeE">
-                                <rect key="frame" x="157" y="364" width="101" height="96"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ltZ-HG-dAr">
+                                <rect key="frame" x="177" y="412" width="60" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by4-pQ-vdM">
+                                        <rect key="frame" x="4" y="-5" width="52" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="morando"/>
+                                        <connections>
+                                            <action selector="tocouMorango:" destination="ACn-mu-fEJ" eventType="touchUpInside" id="u6l-9R-EoC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
@@ -146,7 +157,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Morango" id="ede-Pj-3Qv"/>
                     <connections>
-                        <outlet property="buttonMorango" destination="aHQ-3u-GDS" id="XR6-eS-xre"/>
+                        <outlet property="buttonMorango" destination="by4-pQ-vdM" id="qm9-ax-3Ix"/>
+                        <outlet property="buttonProximo" destination="aHQ-3u-GDS" id="VSH-9v-yLY"/>
+                        <outlet property="viewMorango" destination="ltZ-HG-dAr" id="Zfl-8p-Jfw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="20Y-fH-9a1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
