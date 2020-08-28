@@ -21,12 +21,17 @@ class MorangoViewController: UIViewController {
 
         UIView.animate(withDuration: 0.6,
         animations: {
-            self.viewMorango.transform = CGAffineTransform(scaleX: 1 + 0.1 * CGFloat(self.contador), y: 1 + 0.1 * CGFloat(self.contador))
+            self.viewMorango.transform =
+                self.viewMorango.transform.scaledBy(x: 1.3, y: 1.3)
+//                CGAffineTransform(scaleX: 1 + 0.1 * CGFloat(self.contador), y: 1 + 0.1 * CGFloat(self.contador))
         }
             )
         
         contador+=1
         
+        if contador > 1 {
+             buttonProximo.isHidden = false
+        }
         
     } // fechou action tocou morango
     
@@ -36,11 +41,8 @@ class MorangoViewController: UIViewController {
     
     // tocou em qualquer lugar
     @IBAction func gestureMogango(_ sender: Any) {
-        
         view.backgroundColor = .blue
-        
-        buttonProximo.isHidden = false
-        
+    
     } // fecha tapGesture
     
     
