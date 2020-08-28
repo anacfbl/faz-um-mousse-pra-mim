@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3096704E24F9989300D49CFD /* Frutinha.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3096704D24F9989300D49CFD /* Frutinha.storyboard */; };
 		F78F879024F7FAC60033F0A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F878F24F7FAC60033F0A1 /* AppDelegate.swift */; };
 		F78F879224F7FAC60033F0A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F879124F7FAC60033F0A1 /* SceneDelegate.swift */; };
 		F78F879424F7FAC60033F0A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F879324F7FAC60033F0A1 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3096704D24F9989300D49CFD /* Frutinha.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Frutinha.storyboard; sourceTree = "<group>"; };
 		F78F878C24F7FAC60033F0A1 /* Faz um Mousse pra mim?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Faz um Mousse pra mim?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78F878F24F7FAC60033F0A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78F879124F7FAC60033F0A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				F78F87B324F934330033F0A1 /* MorangoViewController.swift */,
 				F78F87B524F934650033F0A1 /* LimaoViewController.swift */,
 				F78F87B724F934A70033F0A1 /* FrutinhaViewController.swift */,
+				3096704D24F9989300D49CFD /* Frutinha.storyboard */,
 				F78F879524F7FAC60033F0A1 /* Main.storyboard */,
 				F78F879824F7FAC90033F0A1 /* Assets.xcassets */,
 				F78F879A24F7FAC90033F0A1 /* LaunchScreen.storyboard */,
@@ -195,6 +198,7 @@
 				F78F879C24F7FAC90033F0A1 /* LaunchScreen.storyboard in Resources */,
 				F78F879924F7FAC90033F0A1 /* Assets.xcassets in Resources */,
 				F78F879724F7FAC60033F0A1 /* Main.storyboard in Resources */,
+				3096704E24F9989300D49CFD /* Frutinha.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

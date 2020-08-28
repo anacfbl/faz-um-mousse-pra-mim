@@ -13,14 +13,16 @@ import UIKit
     @IBOutlet weak var semente: UIImageView!
     @IBOutlet weak var imageMaracuja: UIImageView!
     
-    @IBOutlet weak var buttonMaracuja: UIButton!
+    
+    @IBOutlet weak var buttonProximo: UIButton!
+    
     
     var maracuja = UIImage.init (named: "maracuja")
     
     @IBAction func gestureMaracuja(_ sender: Any) {
         view.backgroundColor = .blue
         
-        buttonMaracuja.isHidden = false
+        buttonProximo.isHidden = false
         
         imageMaracuja.image = maracuja
         
@@ -35,7 +37,7 @@ import UIKit
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        buttonMaracuja.isHidden = true
+        buttonProximo.isHidden = true
         semente.isHidden = true
         
     } // fecha viewDidLoad
