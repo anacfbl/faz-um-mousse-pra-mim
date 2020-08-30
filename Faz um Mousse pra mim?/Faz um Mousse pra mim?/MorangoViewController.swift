@@ -12,42 +12,52 @@ class MorangoViewController: UIViewController {
     
     @IBOutlet weak var buttonProximo: UIButton!
     @IBOutlet weak var buttonMorango: UIButton!
+    @IBOutlet weak var buttonMousseMorango: UIButton!
     
     @IBOutlet weak var viewMorango: UIView!
     
-    var contador = 1
+    var contador = 0
     
+   
+        
     @IBAction func tocouMorango(_ sender: Any) {
 
+        contador+=1
+        
+        print(contador)
+        
         UIView.animate(withDuration: 0.6,
         animations: {
             self.viewMorango.transform =
                 self.viewMorango.transform.scaledBy(x: 1.3, y: 1.3)
-//                CGAffineTransform(scaleX: 1 + 0.1 * CGFloat(self.contador), y: 1 + 0.1 * CGFloat(self.contador))
         }
-            )
-        
-        contador+=1
+            ) // fecha animacao increase
         
         if contador > 1 {
-             buttonProximo.isHidden = false
+            buttonMousseMorango.isHidden = false
+            buttonMorango.isHidden = true
         }
         
     } // fechou action tocou morango
     
     
    
+    @IBAction func tocouMousse(_ sender: Any) {
+              buttonProximo.isHidden = false
+        print("tosjd")
+    }
     
     
     // tocou em qualquer lugar
     @IBAction func gestureMogango(_ sender: Any) {
-        view.backgroundColor = .blue
+        view.backgroundColor = .cyan
     
     } // fecha tapGesture
     
     
     // tocou fora do morango:
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         super.touchesBegan(touches, with: event)
 
         let touch = touches.first
@@ -62,7 +72,6 @@ class MorangoViewController: UIViewController {
 
             viewMorango.layer.add(animation, forKey: "position")
         }
-//            else { print("Tapped inside the view") }
         
     } // fechou funcao tocou fora touchesbegan
     
@@ -72,6 +81,7 @@ class MorangoViewController: UIViewController {
         
         buttonProximo.isHidden = true
         viewMorango.backgroundColor = .clear
+        buttonMousseMorango.isHidden = true
         
     } // fehca viewDidLoad
     

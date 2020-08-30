@@ -115,21 +115,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ltZ-HG-dAr">
-                                <rect key="frame" x="177" y="412" width="60" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by4-pQ-vdM">
-                                        <rect key="frame" x="4" y="-5" width="52" height="77"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="morando"/>
-                                        <connections>
-                                            <action selector="tocouMorango:" destination="ACn-mu-fEJ" eventType="touchUpInside" id="u6l-9R-EoC"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHQ-3u-GDS">
                                 <rect key="frame" x="18" y="783" width="378" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -147,6 +132,29 @@
                                     <segue destination="3eL-7I-iYf" kind="show" id="W25-R2-8pQ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ltZ-HG-dAr">
+                                <rect key="frame" x="177" y="412" width="60" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by4-pQ-vdM">
+                                        <rect key="frame" x="5" y="-2" width="50" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="morango"/>
+                                        <connections>
+                                            <action selector="tocouMorango:" destination="ACn-mu-fEJ" eventType="touchUpInside" id="u6l-9R-EoC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ro-7Y-LYy">
+                                <rect key="frame" x="103" y="373" width="209" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="moussemorango-2"/>
+                                <connections>
+                                    <action selector="tocouMousse:" destination="ACn-mu-fEJ" eventType="touchUpInside" id="x7R-oA-86U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
@@ -158,6 +166,7 @@
                     <navigationItem key="navigationItem" title="Morango" id="ede-Pj-3Qv"/>
                     <connections>
                         <outlet property="buttonMorango" destination="by4-pQ-vdM" id="qm9-ax-3Ix"/>
+                        <outlet property="buttonMousseMorango" destination="5Ro-7Y-LYy" id="KTX-us-fLg"/>
                         <outlet property="buttonProximo" destination="aHQ-3u-GDS" id="VSH-9v-yLY"/>
                         <outlet property="viewMorango" destination="ltZ-HG-dAr" id="Zfl-8p-Jfw"/>
                     </connections>
@@ -193,10 +202,17 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="limao" translatesAutoresizingMaskIntoConstraints="NO" id="F5T-ER-jGh">
-                                <rect key="frame" x="134" y="271" width="147" height="138"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kv5-Y7-X35">
+                                <rect key="frame" x="152" y="274" width="110" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="limao-1" translatesAutoresizingMaskIntoConstraints="NO" id="F5T-ER-jGh">
+                                        <rect key="frame" x="-18" y="-4" width="147" height="138"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
@@ -207,7 +223,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Limão" id="Zbc-CG-LrZ"/>
                     <connections>
-                        <outlet property="buttonLimao" destination="8JB-jM-rq4" id="ZNF-6z-rBA"/>
+                        <outlet property="buttonProximo" destination="8JB-jM-rq4" id="2rg-hL-Of6"/>
+                        <outlet property="viewLimao" destination="kv5-Y7-X35" id="s88-kk-LW8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIu-7f-c4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -239,9 +256,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="limao" width="86" height="86"/>
+        <image name="limao-1" width="150" height="150"/>
         <image name="maracujasemente-1" width="104" height="107"/>
-        <image name="morando" width="62" height="99"/>
+        <image name="morango" width="603" height="957"/>
+        <image name="moussemorango-2" width="295" height="217"/>
         <image name="nome" width="241" height="147"/>
         <image name="semente" width="109" height="71"/>
     </resources>
