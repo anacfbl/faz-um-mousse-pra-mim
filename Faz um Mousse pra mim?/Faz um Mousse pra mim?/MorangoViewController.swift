@@ -33,7 +33,7 @@ class MorangoViewController: UIViewController {
         }
             ) // fecha animacao increase
         
-        if contador > 1 {
+        if contador > 0 {
             buttonMousseMorango.isHidden = false
             buttonMorango.isHidden = true
         }
@@ -44,14 +44,12 @@ class MorangoViewController: UIViewController {
    
     @IBAction func tocouMousse(_ sender: Any) {
               buttonProximo.isHidden = false
-        print("tosjd")
+
     }
     
     
     // tocou em qualquer lugar
     @IBAction func gestureMogango(_ sender: Any) {
-        view.backgroundColor = .cyan
-    
     } // fecha tapGesture
     
     
@@ -79,6 +77,8 @@ class MorangoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        view.backgroundColor = .cyan
         buttonProximo.isHidden = true
         viewMorango.backgroundColor = .clear
         buttonMousseMorango.isHidden = true

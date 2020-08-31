@@ -202,29 +202,53 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7a-38-Q9r">
+                                <rect key="frame" x="102" y="373" width="209" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mousselimaoOK"/>
+                                <connections>
+                                    <action selector="tocouMousse:" destination="ACn-mu-fEJ" eventType="touchUpInside" id="0J4-dg-Jae"/>
+                                    <action selector="tocouMousse:" destination="3eL-7I-iYf" eventType="touchUpInside" id="pB5-M6-RJp"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kv5-Y7-X35">
-                                <rect key="frame" x="152" y="274" width="110" height="131"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="limao-1" translatesAutoresizingMaskIntoConstraints="NO" id="F5T-ER-jGh">
-                                        <rect key="frame" x="-18" y="-4" width="147" height="138"/>
+                                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="limao-2" translatesAutoresizingMaskIntoConstraints="NO" id="F5T-ER-jGh">
+                                        <rect key="frame" x="-3749" y="-3553" width="7909" height="8049"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEq-dg-JVC">
+                                        <rect key="frame" x="118" y="382" width="174" height="179"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tocouLimao:" destination="3eL-7I-iYf" eventType="touchUpInside" id="DTI-F0-9CZ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HTG-i2-Ndd" appends="YES" id="pCc-Li-CbN"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="MR0-d2-Azq"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="dp0-bg-rMT" appends="YES" id="qgO-jo-2S0"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Limão" id="Zbc-CG-LrZ"/>
                     <connections>
+                        <outlet property="buttonLimao" destination="vEq-dg-JVC" id="caF-A2-BFN"/>
+                        <outlet property="buttonMousseLimao" destination="u7a-38-Q9r" id="gCX-fL-cNn"/>
                         <outlet property="buttonProximo" destination="8JB-jM-rq4" id="2rg-hL-Of6"/>
+                        <outlet property="imagemLimao" destination="F5T-ER-jGh" id="lZL-OR-iFk"/>
                         <outlet property="viewLimao" destination="kv5-Y7-X35" id="s88-kk-LW8"/>
+                        <outlet property="viewTela" destination="Ezl-hH-y2Z" id="cZ3-TF-r4x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIu-7f-c4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -233,6 +257,11 @@
                         <action selector="gestureLimao:" destination="3eL-7I-iYf" id="EIg-8c-vxv"/>
                     </connections>
                 </tapGestureRecognizer>
+                <pinchGestureRecognizer id="HTG-i2-Ndd">
+                    <connections>
+                        <action selector="scaleImage:" destination="3eL-7I-iYf" id="ozp-r0-xT2"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3579.7101449275365" y="137.94642857142856"/>
         </scene>
@@ -256,9 +285,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="limao-1" width="150" height="150"/>
+        <image name="limao-2" width="1943" height="1942"/>
         <image name="maracujasemente-1" width="104" height="107"/>
         <image name="morango" width="603" height="957"/>
+        <image name="mousselimaoOK" width="281" height="206"/>
         <image name="moussemorango-2" width="295" height="217"/>
         <image name="nome" width="241" height="147"/>
         <image name="semente" width="109" height="71"/>
