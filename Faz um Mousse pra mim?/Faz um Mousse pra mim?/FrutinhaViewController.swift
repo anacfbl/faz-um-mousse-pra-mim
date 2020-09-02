@@ -9,11 +9,16 @@
 import UIKit
 
 class FrutinhaViewController: UIViewController {
+    
+    //MARK: Properties
+    
+    var frutinhas = [Frutinha]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    
 
 }
