@@ -15,13 +15,13 @@ public class Frutinha {
     var familiaDaFrutinha: String
     var generoDaFrutinha: String
     var ordemDaFrutinha: String
-    var carboidratosDaFrutinha: Int
-    var proteinasDaFrutinha: Int
-    var gordurasDaFrutinha: Int
+    var carboidratosDaFrutinha: Double
+    var proteinasDaFrutinha: Double
+    var gordurasDaFrutinha: Double
     var caloriasDaFrutinha: Int
-    var acucaresDaFrutinha: Int
+    var acucaresDaFrutinha: Double
     
-    init(fotoFrutinha: UIImage, nomeDaFrutinha: String, familiaDaFrutinha: String, generoDaFrutinha: String, ordemDaFrutinha: String, carboidratosDaFrutinha: Int, proteinasDaFrutinha: Int, gordurasDaFrutinha: Int, caloriasDaFrutinha: Int, acucaresDaFrutinha: Int) {
+    init(fotoFrutinha: UIImage, nomeDaFrutinha: String, familiaDaFrutinha: String, generoDaFrutinha: String, ordemDaFrutinha: String, carboidratosDaFrutinha: Double, proteinasDaFrutinha: Double, gordurasDaFrutinha: Double, caloriasDaFrutinha: Int, acucaresDaFrutinha: Double) {
         self.fotoFrutinha = fotoFrutinha
         self.nomeDaFrutinha = nomeDaFrutinha
         self.familiaDaFrutinha = familiaDaFrutinha

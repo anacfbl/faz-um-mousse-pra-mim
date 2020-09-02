@@ -18,6 +18,7 @@
 		F78F87B224F933D10033F0A1 /* MaracujaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F87B124F933D10033F0A1 /* MaracujaViewController.swift */; };
 		F78F87B424F934330033F0A1 /* MorangoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F87B324F934330033F0A1 /* MorangoViewController.swift */; };
 		F78F87B624F934650033F0A1 /* LimaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F87B524F934650033F0A1 /* LimaoViewController.swift */; };
+		F7B7447524FD89BC00DAE2C3 /* Fruity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7447424FD89BC00DAE2C3 /* Fruity.swift */; };
 		F7DECB6124FD1F720043EA85 /* FrutinhaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DECB6024FD1F720043EA85 /* FrutinhaTableViewCell.swift */; };
 		F7DECB6324FD241E0043EA85 /* FrutinhaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DECB6224FD241E0043EA85 /* FrutinhaClass.swift */; };
 		F7DECB6724FD2B040043EA85 /* FrutinhaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DECB6624FD2B040043EA85 /* FrutinhaTableViewController.swift */; };
@@ -49,6 +50,7 @@
 		F78F87B124F933D10033F0A1 /* MaracujaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaracujaViewController.swift; sourceTree = "<group>"; };
 		F78F87B324F934330033F0A1 /* MorangoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorangoViewController.swift; sourceTree = "<group>"; };
 		F78F87B524F934650033F0A1 /* LimaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimaoViewController.swift; sourceTree = "<group>"; };
+		F7B7447424FD89BC00DAE2C3 /* Fruity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruity.swift; sourceTree = "<group>"; };
 		F7DECB6024FD1F720043EA85 /* FrutinhaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutinhaTableViewCell.swift; sourceTree = "<group>"; };
 		F7DECB6224FD241E0043EA85 /* FrutinhaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutinhaClass.swift; sourceTree = "<group>"; };
 		F7DECB6624FD2B040043EA85 /* FrutinhaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutinhaTableViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				F78F87B524F934650033F0A1 /* LimaoViewController.swift */,
 				F7DECB6224FD241E0043EA85 /* FrutinhaClass.swift */,
 				F7DECB6624FD2B040043EA85 /* FrutinhaTableViewController.swift */,
+				F7B7447424FD89BC00DAE2C3 /* Fruity.swift */,
 				F7DECB6024FD1F720043EA85 /* FrutinhaTableViewCell.swift */,
 				3096704D24F9989300D49CFD /* Frutinha.storyboard */,
 				F78F879524F7FAC60033F0A1 /* Main.storyboard */,
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B7447524FD89BC00DAE2C3 /* Fruity.swift in Sources */,
 				F78F879424F7FAC60033F0A1 /* ViewController.swift in Sources */,
 				F7DECB6124FD1F720043EA85 /* FrutinhaTableViewCell.swift in Sources */,
 				F78F87B624F934650033F0A1 /* LimaoViewController.swift in Sources */,
