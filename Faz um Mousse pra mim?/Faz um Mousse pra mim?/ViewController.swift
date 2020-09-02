@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nome: UIImageView!
     
+    @IBOutlet weak var navigationBar: UINavigationItem!
     
     @IBAction func buttonInicial(_ sender: Any) {}
     
