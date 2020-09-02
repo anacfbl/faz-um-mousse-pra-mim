@@ -219,7 +219,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHQ-3u-GDS">
-                                        <rect key="frame" x="30" y="750" width="348" height="90"/>
+                                        <rect key="frame" x="33" y="750" width="348" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>

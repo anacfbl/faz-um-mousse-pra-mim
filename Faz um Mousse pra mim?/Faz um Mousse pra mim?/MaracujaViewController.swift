@@ -132,7 +132,7 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
             
             if viewMaracuja.frame.contains(recognizer.location(in: self.view)) {
                 
-                if contador == 1 {
+                if contador == 9 {
                     buttonMousse.isHidden = false
                     viewMaracuja.isHidden = true
             

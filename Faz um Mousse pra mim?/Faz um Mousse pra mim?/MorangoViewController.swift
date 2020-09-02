@@ -34,9 +34,9 @@ class MorangoViewController: UIViewController {
         ) // fecha animacao increase
         
         
-        if contador > 1 {
+        if contador == 12 {
             buttonMousseMorango.isHidden = false
-            buttonMorango.isHidden = true
+            viewMorango.isHidden = true
         }
         
     } // fechou action tocou morango

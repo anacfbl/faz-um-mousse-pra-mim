@@ -30,8 +30,14 @@ class LimaoViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBAction func scaleImage(_ sender:        UIPinchGestureRecognizer) {
         
-        if sender.scale != 1 {
-            buttonLimao.isEnabled = true }
+        
+        if imageViewScale <= 0.04 {
+            //            buttonLimao.isEnabled = true
+            buttonLimao.isHidden = false
+            
+        } else {
+            buttonLimao.isHidden = true
+        }
         
         if sender.state == .began || sender.state == .changed {
             
@@ -41,9 +47,10 @@ class LimaoViewController: UIViewController, UIGestureRecognizerDelegate {
                 imageViewScale *= pinchScale
                 imagemLimao.transform = (imagemLimao.transform.scaledBy(x: pinchScale, y: pinchScale))
             }
-            sender.scale = 1.0 }
+            sender.scale = 1.0
+        }
         
-        print(sender.scale)
+        print(imageViewScale)
     }
     
     
@@ -85,8 +92,8 @@ class LimaoViewController: UIViewController, UIGestureRecognizerDelegate {
         
         buttonProximo.isHidden = true
         viewLimao.backgroundColor = .clear
-        buttonLimao.isHidden = false
-        buttonLimao.isEnabled = false
+        buttonLimao.isHidden = true
+        //        buttonLimao.isEnabled = false
         buttonMousseLimao.isHidden = true
         
         UIView.animate(withDuration: 1, delay: 0.0, options:[.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
