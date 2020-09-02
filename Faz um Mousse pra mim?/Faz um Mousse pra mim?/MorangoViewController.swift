@@ -34,7 +34,7 @@ class MorangoViewController: UIViewController {
         ) // fecha animacao increase
         
 
-        if contador > 1 {
+        if contador > 8 {
             buttonMousseMorango.isHidden = false
             buttonMorango.isHidden = true
         }

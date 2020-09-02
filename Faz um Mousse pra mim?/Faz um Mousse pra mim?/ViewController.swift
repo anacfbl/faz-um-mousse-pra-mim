@@ -21,22 +21,29 @@ class ViewController: UIViewController {
     @IBAction func buttonInicial(_ sender: Any) {}
     
     
+    @IBAction func tapInicial(_ sender: Any) {
+        
+        UIView.animate (withDuration: 2.0, delay: 0, animations: {
+                   
+                   self.viewNome.center = self.view.center })
+           
+               
+               UIView.animate (withDuration: 2, delay: 0,  animations: {
+                   
+                   self.view.backgroundColor = .black
+                   self.view.backgroundColor = .white })
+        
+          buttonInicial.isHidden = false
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
           viewNome.backgroundColor = .clear
+        buttonInicial.isHidden = true
+        view.backgroundColor = .black
 
-        
-        UIView.animate (withDuration: 2.0, delay: 0, animations: {
-            
-            self.viewNome.center = self.view.center })
-    
-        
-        UIView.animate (withDuration: 2, delay: 0,  animations: {
-            
-            self.view.backgroundColor = .black
-            self.view.backgroundColor = .white })
-        
-       
         
     } // fecha view DidLoad
 
