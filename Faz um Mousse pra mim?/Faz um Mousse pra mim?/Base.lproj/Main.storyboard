@@ -78,16 +78,32 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4g8-P3-Qyk">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNH-aW-XiX">
-                                <rect key="frame" x="120" y="363" width="174" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maracuja semente" translatesAutoresizingMaskIntoConstraints="NO" id="Go7-CN-44C">
-                                        <rect key="frame" x="-4" y="-3" width="178" height="174"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzY-FO-Ur3">
+                                        <rect key="frame" x="102" y="373" width="209" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
+                                        <state key="normal" title="Button" image="mousse maracuja"/>
+                                        <connections>
+                                            <action selector="tocouMousse:" destination="ACn-mu-fEJ" eventType="touchUpInside" id="DVh-mO-N0q"/>
+                                            <action selector="tocouMousse:" destination="hml-IC-Fwd" eventType="touchUpInside" id="gUu-GO-O0r"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNH-aW-XiX">
+                                        <rect key="frame" x="136" y="379" width="142" height="144"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maracuja semente" translatesAutoresizingMaskIntoConstraints="NO" id="Go7-CN-44C">
+                                                <rect key="frame" x="-25" y="-22" width="191" height="187"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
@@ -107,12 +123,44 @@
                                     <segue destination="ACn-mu-fEJ" kind="show" id="JQ7-Xw-KoB"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente" translatesAutoresizingMaskIntoConstraints="NO" id="yyG-22-akQ">
-                                <rect key="frame" x="300" y="200" width="27" height="37"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente1" translatesAutoresizingMaskIntoConstraints="NO" id="yyG-22-akQ">
+                                <rect key="frame" x="300" y="208" width="15" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente" translatesAutoresizingMaskIntoConstraints="NO" id="rBd-3u-z10">
-                                <rect key="frame" x="100" y="150" width="27" height="37"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente 2" translatesAutoresizingMaskIntoConstraints="NO" id="rBd-3u-z10">
+                                <rect key="frame" x="103" y="150" width="10" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente 3" translatesAutoresizingMaskIntoConstraints="NO" id="fsR-47-fV0">
+                                <rect key="frame" x="50" y="500" width="10" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente 4" translatesAutoresizingMaskIntoConstraints="NO" id="HIH-KI-u5O">
+                                <rect key="frame" x="350" y="550" width="15" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente 5" translatesAutoresizingMaskIntoConstraints="NO" id="Pgj-Zn-h4h">
+                                <rect key="frame" x="300" y="707" width="11" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente 6" translatesAutoresizingMaskIntoConstraints="NO" id="r75-LF-qZo">
+                                <rect key="frame" x="80" y="680" width="15" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente 7" translatesAutoresizingMaskIntoConstraints="NO" id="5V6-sK-26V">
+                                <rect key="frame" x="50" y="290" width="12" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente 8" translatesAutoresizingMaskIntoConstraints="NO" id="cUe-6g-qyq">
+                                <rect key="frame" x="200" y="300" width="15" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente 9" translatesAutoresizingMaskIntoConstraints="NO" id="4QT-Hm-qBM">
+                                <rect key="frame" x="370" y="380" width="11" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente 10" translatesAutoresizingMaskIntoConstraints="NO" id="8Gp-FZ-bX9">
+                                <rect key="frame" x="196" y="607" width="10" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -125,10 +173,19 @@
                     </view>
                     <navigationItem key="navigationItem" title="Maracujá" id="kog-Tr-hhX"/>
                     <connections>
+                        <outlet property="buttonMousse" destination="JzY-FO-Ur3" id="0PP-j0-e8L"/>
                         <outlet property="buttonProximo" destination="ekj-NX-PFP" id="BXs-dR-HdG"/>
                         <outlet property="imageMaracuja" destination="Go7-CN-44C" id="c3y-Te-s7X"/>
                         <outlet property="semente" destination="yyG-22-akQ" id="IRp-tf-dix"/>
+                        <outlet property="semente10" destination="8Gp-FZ-bX9" id="t5d-Rm-R0a"/>
                         <outlet property="semente2" destination="rBd-3u-z10" id="vE3-32-drc"/>
+                        <outlet property="semente3" destination="fsR-47-fV0" id="pVl-qY-Sn8"/>
+                        <outlet property="semente4" destination="HIH-KI-u5O" id="F9S-jA-4hb"/>
+                        <outlet property="semente5" destination="Pgj-Zn-h4h" id="74r-nn-PJs"/>
+                        <outlet property="semente6" destination="r75-LF-qZo" id="etV-ZC-Ego"/>
+                        <outlet property="semente7" destination="5V6-sK-26V" id="qeJ-f4-dCo"/>
+                        <outlet property="semente8" destination="cUe-6g-qyq" id="aUS-gQ-CuJ"/>
+                        <outlet property="semente9" destination="4QT-Hm-qBM" id="h9H-uL-uDF"/>
                         <outlet property="viewCores" destination="4g8-P3-Qyk" id="ivd-uT-IFQ"/>
                         <outlet property="viewMaracuja" destination="WNH-aW-XiX" id="Ckq-iM-nig"/>
                     </connections>
@@ -156,17 +213,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4aJ-ZQ-IXx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ltZ-HG-dAr">
                                 <rect key="frame" x="177" y="412" width="60" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4aJ-ZQ-IXx">
-                                        <rect key="frame" x="-177" y="-412" width="414" height="896"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by4-pQ-vdM">
-                                        <rect key="frame" x="5" y="-2" width="50" height="74"/>
+                                        <rect key="frame" x="5" y="-1" width="50" height="74"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="morango"/>
                                         <connections>
@@ -207,6 +264,7 @@
                         <viewLayoutGuide key="safeArea" id="BuG-qZ-NQx"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Oua-0k-TIW" appends="YES" id="eDL-qw-SJH"/>
+                            <outletCollection property="gestureRecognizers" destination="opb-Tn-oAT" appends="YES" id="1T0-ur-B28"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Morango" id="ede-Pj-3Qv"/>
@@ -224,6 +282,11 @@
                         <action selector="gestureMogango:" destination="ACn-mu-fEJ" id="MkB-eb-ejb"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="opb-Tn-oAT">
+                    <connections>
+                        <outlet property="delegate" destination="by4-pQ-vdM" id="V6v-tu-fAe"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2789.8550724637685" y="137.94642857142856"/>
         </scene>
@@ -258,11 +321,19 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEq-dg-JVC">
-                                        <rect key="frame" x="118" y="382" width="174" height="179"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEq-dg-JVC">
+                                        <rect key="frame" x="109" y="369" width="197" height="198"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <gestureRecognizers/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="tocouLimao:" destination="3eL-7I-iYf" eventType="touchUpInside" id="DTI-F0-9CZ"/>
+                                            <outletCollection property="gestureRecognizers" destination="jQU-Z0-WYk" appends="YES" id="T8P-V9-ovG"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -312,6 +383,11 @@
                         <action selector="scaleImage:" destination="3eL-7I-iYf" id="ozp-r0-xT2"/>
                     </connections>
                 </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="jQU-Z0-WYk">
+                    <connections>
+                        <outlet property="delegate" destination="kv5-Y7-X35" id="kct-cD-vaT"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3579.7101449275365" y="137.94642857142856"/>
         </scene>
@@ -338,12 +414,22 @@
         <image name="limao-2" width="1943" height="1942"/>
         <image name="maracuja semente" width="539" height="558"/>
         <image name="morango" width="603" height="957"/>
+        <image name="mousse maracuja" width="215" height="158"/>
         <image name="mousselimaoOK" width="281" height="206"/>
         <image name="moussemorango-2" width="295" height="217"/>
         <image name="nome" width="241" height="147"/>
         <image name="que deli" width="658" height="211"/>
         <image name="queromaismaracuja" width="386" height="100"/>
         <image name="queromaismorango" width="386" height="100"/>
-        <image name="semente" width="109" height="71"/>
+        <image name="semente 10" width="19" height="27"/>
+        <image name="semente 2" width="18" height="27"/>
+        <image name="semente 3" width="15" height="29"/>
+        <image name="semente 4" width="29" height="17"/>
+        <image name="semente 5" width="14" height="30"/>
+        <image name="semente 6" width="27" height="19"/>
+        <image name="semente 7" width="23" height="24"/>
+        <image name="semente 8" width="29" height="17"/>
+        <image name="semente 9" width="14" height="30"/>
+        <image name="semente1" width="30" height="14"/>
     </resources>
 </document>

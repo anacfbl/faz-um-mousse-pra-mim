@@ -11,10 +11,12 @@ import UIKit
 class LimaoViewController: UIViewController, UIGestureRecognizerDelegate {
     
     
-    @IBOutlet weak var viewTela: UIView!
     @IBOutlet weak var imagemLimao: UIImageView!
+    
     @IBOutlet weak var viewLimao: UIView!
     @IBOutlet weak var viewCores: UIView!
+    @IBOutlet weak var viewTela: UIView!
+    
     @IBOutlet weak var buttonProximo: UIButton!
     @IBOutlet weak var buttonLimao: UIButton!
     @IBOutlet weak var buttonMousseLimao: UIButton!
@@ -28,11 +30,8 @@ class LimaoViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBAction func scaleImage(_ sender:        UIPinchGestureRecognizer) {
         
-        //        imagemLimao.transform = CGAffineTransform(scaleX: sender.scale, y: sender.scale)
-        
-        
-                if sender.scale != 1 {
-                    buttonLimao.isEnabled = true }
+        if sender.scale != 1 {
+            buttonLimao.isEnabled = true }
         
         if sender.state == .began || sender.state == .changed {
             
@@ -90,16 +89,12 @@ class LimaoViewController: UIViewController, UIGestureRecognizerDelegate {
         buttonLimao.isEnabled = false
         buttonMousseLimao.isHidden = true
         
-        UIView.animate(withDuration: 1, delay: 0.0, options:[UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+        UIView.animate(withDuration: 1, delay: 0.0, options:[.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
             self.viewCores.backgroundColor = .orange
             self.viewCores.backgroundColor = .systemPink
         }, completion: nil)
         
-        
-        
-    } // fecha viewDidload
-    
-    
+    } // didLoad
     
     
 } // fecha viewController
