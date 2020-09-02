@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="51l-zo-Qxc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="51l-zo-Qxc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -328,6 +328,9 @@
                                         <integer key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rhg-U1-sJc" kind="show" id="X8Y-JO-QBK"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kv5-Y7-X35">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -341,7 +344,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEq-dg-JVC">
                                         <rect key="frame" x="109" y="369" width="197" height="198"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <gestureRecognizers/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -394,6 +396,16 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3579.7101449275365" y="137.94642857142856"/>
+        </scene>
+        <!--FrutinhaTableViewController-->
+        <scene sceneID="eBj-x8-QJP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Frutinha" referencedIdentifier="FrutinhaTableViewController" id="rhg-U1-sJc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mXh-i4-NSH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2z-Wj-01U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4121" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZNt-Ng-w1q">
