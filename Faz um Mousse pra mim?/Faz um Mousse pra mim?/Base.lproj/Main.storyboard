@@ -15,16 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nome" translatesAutoresizingMaskIntoConstraints="NO" id="yf4-vO-ej5">
-                                <rect key="frame" x="87" y="311" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1i-tK-IAU">
                                 <rect key="frame" x="18" y="783" width="378" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <inset key="contentEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="vamos!">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -37,6 +33,16 @@
                                     <segue destination="hml-IC-Fwd" kind="show" id="xJY-Yz-h8s"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bm-ks-SC0">
+                                <rect key="frame" x="94" y="-17" width="227" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nome" translatesAutoresizingMaskIntoConstraints="NO" id="yf4-vO-ej5">
+                                        <rect key="frame" x="-7" y="-15" width="267" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,6 +50,8 @@
                     <navigationItem key="navigationItem" id="WLy-1U-BRx"/>
                     <connections>
                         <outlet property="buttonInicial" destination="d1i-tK-IAU" id="xi3-8V-Awu"/>
+                        <outlet property="nome" destination="yf4-vO-ej5" id="cDA-qq-ose"/>
+                        <outlet property="viewNome" destination="1bm-ks-SC0" id="nnZ-zB-g5l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -58,12 +66,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekj-NX-PFP">
-                                <rect key="frame" x="16" y="778" width="378" height="54"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4g8-P3-Qyk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNH-aW-XiX">
+                                <rect key="frame" x="120" y="363" width="174" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maracuja semente" translatesAutoresizingMaskIntoConstraints="NO" id="Go7-CN-44C">
+                                        <rect key="frame" x="-4" y="-3" width="178" height="174"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente" translatesAutoresizingMaskIntoConstraints="NO" id="yyG-22-akQ">
+                                <rect key="frame" x="312" y="242" width="27" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekj-NX-PFP">
+                                <rect key="frame" x="33" y="754" width="348" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" image="queromaismaracuja">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -75,14 +102,6 @@
                                     <segue destination="ACn-mu-fEJ" kind="show" id="JQ7-Xw-KoB"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maracujasemente-1" translatesAutoresizingMaskIntoConstraints="NO" id="Go7-CN-44C">
-                                <rect key="frame" x="116" y="316" width="178" height="174"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="semente" translatesAutoresizingMaskIntoConstraints="NO" id="yyG-22-akQ">
-                                <rect key="frame" x="296" y="214" width="17" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
@@ -96,6 +115,8 @@
                         <outlet property="buttonProximo" destination="ekj-NX-PFP" id="BXs-dR-HdG"/>
                         <outlet property="imageMaracuja" destination="Go7-CN-44C" id="c3y-Te-s7X"/>
                         <outlet property="semente" destination="yyG-22-akQ" id="IRp-tf-dix"/>
+                        <outlet property="viewCores" destination="4g8-P3-Qyk" id="ivd-uT-IFQ"/>
+                        <outlet property="viewMaracuja" destination="WNH-aW-XiX" id="Ckq-iM-nig"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nc9-Zf-JOn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -104,6 +125,11 @@
                         <action selector="gestureMaracuja:" destination="hml-IC-Fwd" id="MCe-cw-1jV"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Ebt-mc-VfT">
+                    <connections>
+                        <action selector="dragDrop:" destination="hml-IC-Fwd" id="T8x-uh-KOj"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1940.5797101449277" y="137.94642857142856"/>
         </scene>
@@ -115,27 +141,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHQ-3u-GDS">
-                                <rect key="frame" x="18" y="783" width="378" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <inset key="contentEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="14"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="3eL-7I-iYf" kind="show" id="W25-R2-8pQ"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ltZ-HG-dAr">
                                 <rect key="frame" x="177" y="412" width="60" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4aJ-ZQ-IXx">
+                                        <rect key="frame" x="-177" y="-412" width="414" height="896"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by4-pQ-vdM">
                                         <rect key="frame" x="5" y="-2" width="50" height="74"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -155,12 +169,29 @@
                                     <action selector="tocouMousse:" destination="ACn-mu-fEJ" eventType="touchUpInside" id="x7R-oA-86U"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHQ-3u-GDS">
+                                <rect key="frame" x="33" y="754" width="348" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <inset key="contentEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="queromaismorango">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="3eL-7I-iYf" kind="show" id="W25-R2-8pQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="BuG-qZ-NQx"/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="Oua-0k-TIW" appends="YES" id="29u-Ps-WRS"/>
+                            <outletCollection property="gestureRecognizers" destination="Oua-0k-TIW" appends="YES" id="eDL-qw-SJH"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Morango" id="ede-Pj-3Qv"/>
@@ -168,6 +199,7 @@
                         <outlet property="buttonMorango" destination="by4-pQ-vdM" id="qm9-ax-3Ix"/>
                         <outlet property="buttonMousseMorango" destination="5Ro-7Y-LYy" id="KTX-us-fLg"/>
                         <outlet property="buttonProximo" destination="aHQ-3u-GDS" id="VSH-9v-yLY"/>
+                        <outlet property="viewCores" destination="4aJ-ZQ-IXx" id="kss-01-bL5"/>
                         <outlet property="viewMorango" destination="ltZ-HG-dAr" id="Zfl-8p-Jfw"/>
                     </connections>
                 </viewController>
@@ -188,20 +220,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JB-jM-rq4">
-                                <rect key="frame" x="18" y="783" width="378" height="54"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EDn-RW-7ai">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <inset key="contentEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="14"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7a-38-Q9r">
                                 <rect key="frame" x="102" y="373" width="209" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -223,8 +246,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEq-dg-JVC">
                                         <rect key="frame" x="118" y="382" width="174" height="179"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="tocouLimao:" destination="3eL-7I-iYf" eventType="touchUpInside" id="DTI-F0-9CZ"/>
                                         </connections>
@@ -236,6 +257,19 @@
                                     <outletCollection property="gestureRecognizers" destination="HTG-i2-Ndd" appends="YES" id="pCc-Li-CbN"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JB-jM-rq4">
+                                <rect key="frame" x="58" y="743" width="300" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" backgroundImage="que deli">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
@@ -247,6 +281,7 @@
                         <outlet property="buttonMousseLimao" destination="u7a-38-Q9r" id="gCX-fL-cNn"/>
                         <outlet property="buttonProximo" destination="8JB-jM-rq4" id="2rg-hL-Of6"/>
                         <outlet property="imagemLimao" destination="F5T-ER-jGh" id="lZL-OR-iFk"/>
+                        <outlet property="viewCores" destination="EDn-RW-7ai" id="5K0-Mh-pA6"/>
                         <outlet property="viewLimao" destination="kv5-Y7-X35" id="s88-kk-LW8"/>
                         <outlet property="viewTela" destination="Ezl-hH-y2Z" id="cZ3-TF-r4x"/>
                     </connections>
@@ -286,11 +321,14 @@
     </scenes>
     <resources>
         <image name="limao-2" width="1943" height="1942"/>
-        <image name="maracujasemente-1" width="104" height="107"/>
+        <image name="maracuja semente" width="539" height="558"/>
         <image name="morango" width="603" height="957"/>
         <image name="mousselimaoOK" width="281" height="206"/>
         <image name="moussemorango-2" width="295" height="217"/>
         <image name="nome" width="241" height="147"/>
+        <image name="que deli" width="658" height="211"/>
+        <image name="queromaismaracuja" width="386" height="100"/>
+        <image name="queromaismorango" width="386" height="100"/>
         <image name="semente" width="109" height="71"/>
     </resources>
 </document>
