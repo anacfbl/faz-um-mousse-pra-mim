@@ -28,6 +28,8 @@ class LimaoViewController: UIViewController, UIGestureRecognizerDelegate {
     let maxScale: CGFloat = 1.1
     let minScale: CGFloat = 0.03
     
+    var frutinhas = [Frutinha]()
+    
     @IBAction func scaleImage(_ sender:        UIPinchGestureRecognizer) {
         
         
@@ -86,6 +88,11 @@ class LimaoViewController: UIViewController, UIGestureRecognizerDelegate {
         
     } // fechou funcao tocou fora touchesbegan
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? FrutinhaTableViewController {
+            vc.frutinhas = frutinhas
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

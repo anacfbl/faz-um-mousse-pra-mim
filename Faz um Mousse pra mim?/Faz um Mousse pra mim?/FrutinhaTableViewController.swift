@@ -13,73 +13,71 @@ class FrutinhaTableViewController: UIViewController, UITableViewDelegate, UITabl
     //MARK: Properties
     @IBOutlet weak var tableView: UITableView!
     
-    public var frutinhas = [Frutinha]()
+    var frutinhas = [Frutinha]()
     var fruity: [Fruity] = []
-    
-    //MARK: Private Methods
-    public func loadSampleFrutinhas(){
-        let fotoLimao = UIImage(named: "limao-1") ??  UIImage()
-        let fotoMorango = UIImage(named: "morando-1") ?? UIImage()
-        let fotoMaracuja = UIImage(named: "maracujasemente-1") ?? UIImage()
-        
-        let limao = Frutinha(fotoFrutinha: fotoLimao, nomeDaFrutinha: "Limão", familiaDaFrutinha: "", generoDaFrutinha: "", ordemDaFrutinha: "", carboidratosDaFrutinha: 0, proteinasDaFrutinha: 0, gordurasDaFrutinha: 0, caloriasDaFrutinha: 0, acucaresDaFrutinha: 0)
-        
-        let morango = Frutinha(fotoFrutinha: fotoMorango, nomeDaFrutinha: "Morango", familiaDaFrutinha: "", generoDaFrutinha: "", ordemDaFrutinha: "", carboidratosDaFrutinha: 0, proteinasDaFrutinha: 0, gordurasDaFrutinha: 0, caloriasDaFrutinha: 0, acucaresDaFrutinha: 0)
-        
-        let maracuja = Frutinha(fotoFrutinha: fotoMaracuja, nomeDaFrutinha: "Maracujá", familiaDaFrutinha: "", generoDaFrutinha: "", ordemDaFrutinha: "", carboidratosDaFrutinha: 0, proteinasDaFrutinha: 0, gordurasDaFrutinha: 0, caloriasDaFrutinha: 0, acucaresDaFrutinha: 0)
-        
-        frutinhas += [maracuja, morango, limao]
-    }
-    
-    public func load() {
-        // TODO: Carregar dados do webservice
-        let url = URL(string: "https://www.fruityvice.com/api/fruit/all")!
-        let task = URLSession.shared.dataTask(with: url){data, response, error in
-            do{
-                let fruity = try JSONDecoder().decode([Fruity].self, from: data!)
-                self.fruity = fruity
-                self.frutinhas[2].familiaDaFrutinha = fruity[4].family
-                self.frutinhas[2].generoDaFrutinha = fruity[4].genus
-                self.frutinhas[2].ordemDaFrutinha = fruity[4].order
-                self.frutinhas[2].carboidratosDaFrutinha = fruity[4].nutritions.carbohydrates
-                self.frutinhas[2].proteinasDaFrutinha = fruity[4].nutritions.protein
-                self.frutinhas[2].gordurasDaFrutinha = fruity[4].nutritions.fat
-                self.frutinhas[2].caloriasDaFrutinha = fruity[4].nutritions.calories
-                self.frutinhas[2].acucaresDaFrutinha = fruity[4].nutritions.sugar
-                
-                self.frutinhas[1].familiaDaFrutinha = fruity[10].family
-                self.frutinhas[1].generoDaFrutinha = fruity[10].genus
-                self.frutinhas[1].ordemDaFrutinha = fruity[10].order
-                self.frutinhas[1].carboidratosDaFrutinha = fruity[10].nutritions.carbohydrates
-                self.frutinhas[1].proteinasDaFrutinha = fruity[10].nutritions.protein
-                self.frutinhas[1].gordurasDaFrutinha = fruity[10].nutritions.fat
-                self.frutinhas[1].caloriasDaFrutinha = fruity[10].nutritions.calories
-                self.frutinhas[1].acucaresDaFrutinha = fruity[10].nutritions.sugar
-                
-                self.frutinhas[0].familiaDaFrutinha = "Passifloraceae"
-                self.frutinhas[0].generoDaFrutinha = "Passiflora"
-                self.frutinhas[0].ordemDaFrutinha = "Malpighiales"
-                self.frutinhas[0].carboidratosDaFrutinha = 23
-                self.frutinhas[0].proteinasDaFrutinha = 2.2
-                self.frutinhas[0].gordurasDaFrutinha = 0.7
-                self.frutinhas[0].caloriasDaFrutinha = 97
-                self.frutinhas[0].acucaresDaFrutinha = 11
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            }catch{
-                print("deu não")
-            }
-            
-        }.resume()
-        
-    }
+//    
+//    //MARK: Private Methods
+//    public func loadSampleFrutinhas(){
+//        let fotoLimao = UIImage(named: "limao-1") ??  UIImage()
+//        let fotoMorango = UIImage(named: "morando-1") ?? UIImage()
+//        let fotoMaracuja = UIImage(named: "maracujasemente-1") ?? UIImage()
+//        
+//        let limao = Frutinha(fotoFrutinha: fotoLimao, nomeDaFrutinha: "Limão", familiaDaFrutinha: "", generoDaFrutinha: "", ordemDaFrutinha: "", carboidratosDaFrutinha: 0, proteinasDaFrutinha: 0, gordurasDaFrutinha: 0, caloriasDaFrutinha: 0, acucaresDaFrutinha: 0)
+//        
+//        let morango = Frutinha(fotoFrutinha: fotoMorango, nomeDaFrutinha: "Morango", familiaDaFrutinha: "", generoDaFrutinha: "", ordemDaFrutinha: "", carboidratosDaFrutinha: 0, proteinasDaFrutinha: 0, gordurasDaFrutinha: 0, caloriasDaFrutinha: 0, acucaresDaFrutinha: 0)
+//        
+//        let maracuja = Frutinha(fotoFrutinha: fotoMaracuja, nomeDaFrutinha: "Maracujá", familiaDaFrutinha: "", generoDaFrutinha: "", ordemDaFrutinha: "", carboidratosDaFrutinha: 0, proteinasDaFrutinha: 0, gordurasDaFrutinha: 0, caloriasDaFrutinha: 0, acucaresDaFrutinha: 0)
+//        
+//        frutinhas += [maracuja, morango, limao]
+//    }
+//    
+//    public func load() {
+//        // TODO: Carregar dados do webservice
+//        let url = URL(string: "https://www.fruityvice.com/api/fruit/all")!
+//        let task = URLSession.shared.dataTask(with: url){data, response, error in
+//            do{
+//                let fruity = try JSONDecoder().decode([Fruity].self, from: data!)
+//                self.fruity = fruity
+//                self.frutinhas[2].familiaDaFrutinha = fruity[4].family
+//                self.frutinhas[2].generoDaFrutinha = fruity[4].genus
+//                self.frutinhas[2].ordemDaFrutinha = fruity[4].order
+//                self.frutinhas[2].carboidratosDaFrutinha = fruity[4].nutritions.carbohydrates
+//                self.frutinhas[2].proteinasDaFrutinha = fruity[4].nutritions.protein
+//                self.frutinhas[2].gordurasDaFrutinha = fruity[4].nutritions.fat
+//                self.frutinhas[2].caloriasDaFrutinha = fruity[4].nutritions.calories
+//                self.frutinhas[2].acucaresDaFrutinha = fruity[4].nutritions.sugar
+//                
+//                self.frutinhas[1].familiaDaFrutinha = fruity[10].family
+//                self.frutinhas[1].generoDaFrutinha = fruity[10].genus
+//                self.frutinhas[1].ordemDaFrutinha = fruity[10].order
+//                self.frutinhas[1].carboidratosDaFrutinha = fruity[10].nutritions.carbohydrates
+//                self.frutinhas[1].proteinasDaFrutinha = fruity[10].nutritions.protein
+//                self.frutinhas[1].gordurasDaFrutinha = fruity[10].nutritions.fat
+//                self.frutinhas[1].caloriasDaFrutinha = fruity[10].nutritions.calories
+//                self.frutinhas[1].acucaresDaFrutinha = fruity[10].nutritions.sugar
+//                
+//                self.frutinhas[0].familiaDaFrutinha = "Passifloraceae"
+//                self.frutinhas[0].generoDaFrutinha = "Passiflora"
+//                self.frutinhas[0].ordemDaFrutinha = "Malpighiales"
+//                self.frutinhas[0].carboidratosDaFrutinha = 23
+//                self.frutinhas[0].proteinasDaFrutinha = 2.2
+//                self.frutinhas[0].gordurasDaFrutinha = 0.7
+//                self.frutinhas[0].caloriasDaFrutinha = 97
+//                self.frutinhas[0].acucaresDaFrutinha = 11
+//                
+//                DispatchQueue.main.async {
+//                    self.tableView.reloadData()
+//                }
+//            }catch{
+//                print("deu não")
+//            }
+//            
+//        }.resume()
+//        
+//    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        loadSampleFrutinhas()
-        self.load()
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
     

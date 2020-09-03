@@ -10,7 +10,7 @@ import UIKit
 
 class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
     
-    
+    var frutinhas = [Frutinha]()
     var contador = 0
     
     @IBOutlet weak var semente: UIImageView!
@@ -43,9 +43,15 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
         buttonProximo.isHidden = false
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? MorangoViewController {
+            vc.frutinhas = frutinhas
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(frutinhas)
         
         buttonProximo.isHidden = true
         buttonMousse.isHidden = true
@@ -131,6 +137,13 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
         case .ended:
             
             if viewMaracuja.frame.contains(recognizer.location(in: self.view)) {
+//                let frame = self.view.convert(recognizer.view!.frame, from: viewMaracuja)
+                print(recognizer.view?.frame)
+                
+                recognizer.view?.frame.origin.x = (recognizer.view?.frame.midX)! - 140
+                recognizer.view?.frame.origin.y = (recognizer.view?.frame.midY)! - 390
+                viewMaracuja.addSubview(recognizer.view!)
+                print(recognizer.view?.frame)
                 
                 if contador == 9 {
                     buttonMousse.isHidden = false

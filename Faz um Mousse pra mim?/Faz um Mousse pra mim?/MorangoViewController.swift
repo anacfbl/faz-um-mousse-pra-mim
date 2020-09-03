@@ -18,7 +18,7 @@ class MorangoViewController: UIViewController {
     @IBOutlet weak var viewCores: UIView!
     
     var contador = 0
-    
+    var frutinhas = [Frutinha]()
     
     
     @IBAction func tocouMorango(_ sender: Any) {
@@ -74,7 +74,11 @@ class MorangoViewController: UIViewController {
         
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? LimaoViewController {
+            vc.frutinhas = frutinhas
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
