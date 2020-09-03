@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Faz_um_Mousse_pra_mim_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Faz_um_Mousse_pra_mim_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -561,7 +561,7 @@
         <scene sceneID="eBj-x8-QJP">
             <objects>
                 <viewControllerPlaceholder storyboardName="Frutinha" referencedIdentifier="FrutinhaTableViewController" id="rhg-U1-sJc" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="mXh-i4-NSH"/>
+                    <navigationItem key="navigationItem" title="As Frutinhas" id="mXh-i4-NSH"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2z-Wj-01U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

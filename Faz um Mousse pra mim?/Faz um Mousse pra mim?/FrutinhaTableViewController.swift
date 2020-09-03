@@ -76,14 +76,21 @@ import UIKit
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadSampleFrutinhas()
+        self.load()
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
         
         // Load the sample data
-        loadSampleFrutinhas()
-        self.load()
+//        loadSampleFrutinhas()
+//        self.load()
         
         tableView.delegate = self
         tableView.dataSource = self
