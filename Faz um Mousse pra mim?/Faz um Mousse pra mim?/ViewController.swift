@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+ class ViewController: UIViewController {
     
     
     @IBOutlet weak var buttonInicial: UIButton!
@@ -147,5 +147,3 @@ class ViewController: UIViewController {
 } // fecha view controller
 
 
-
-//options:[UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse],

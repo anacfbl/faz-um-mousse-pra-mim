@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FrutinhaTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+ class FrutinhaTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //MARK: Properties
     @IBOutlet weak var tableView: UITableView!
@@ -78,6 +78,13 @@ class FrutinhaTableViewController: UIViewController, UITableViewDelegate, UITabl
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadSampleFrutinhas()
+        self.load()
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
