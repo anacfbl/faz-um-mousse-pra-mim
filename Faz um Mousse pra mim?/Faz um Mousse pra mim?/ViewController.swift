@@ -8,7 +8,7 @@
 
 import UIKit
 
- class ViewController: UIViewController {
+class ViewController: UIViewController {
     
     
     @IBOutlet weak var buttonInicial: UIButton!
@@ -48,7 +48,13 @@ import UIKit
             self.view.backgroundColor = .black
             self.view.backgroundColor = .white })
         
-        buttonInicial.isHidden = false
+        let secondsToDelay = 2.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + secondsToDelay) {
+            self.buttonInicial.isHidden = false
+            print("This message is delayed")
+            // Put any code you want to be delayed here
+        }
+        
     }
     
     var frutinhas = [Frutinha]()
@@ -125,7 +131,7 @@ import UIKit
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
         if clearBack == false {
-        self.view.backgroundColor = .black
+            self.view.backgroundColor = .black
         } else {
             self.view.backgroundColor = .clear
         }
