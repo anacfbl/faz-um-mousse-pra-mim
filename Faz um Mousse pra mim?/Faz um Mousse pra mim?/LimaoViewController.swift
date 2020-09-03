@@ -141,9 +141,21 @@ class LimaoViewController: UIViewController, UIGestureRecognizerDelegate {
         }
     }
     
+    func trocaLabels() {
+        label1.text = "Limão"
+        label2.text = "\(frutinhas[2].familiaDaFrutinha)"
+        label3.text = "\(frutinhas[2].generoDaFrutinha)"
+        label4.text = "\(frutinhas[2].ordemDaFrutinha)"
+        label5.text = "\(frutinhas[2].carboidratosDaFrutinha)g de carboidratos"
+        label6.text = "\(frutinhas[2].proteinasDaFrutinha)g de proteínas"
+        label7.text = "\(frutinhas[2].gordurasDaFrutinha)g de gorduras"
+        label8.text = "\(frutinhas[2].caloriasDaFrutinha) de calorias"
+        label9.text = "\(frutinhas[2].acucaresDaFrutinha)g de açúcar"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        trocaLabels()
         piscaLabel()
         
         buttonProximo.isHidden = true

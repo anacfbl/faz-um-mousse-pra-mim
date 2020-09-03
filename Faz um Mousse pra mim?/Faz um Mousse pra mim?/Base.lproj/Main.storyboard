@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="51l-zo-Qxc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="51l-zo-Qxc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -89,6 +89,75 @@
                                             <action selector="tocouMousse:" destination="hml-IC-Fwd" eventType="touchUpInside" id="gUu-GO-O0r"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a0I-JA-jy4">
+                                        <rect key="frame" x="-19" y="-7" width="451" height="909"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;calories&quot;: 29," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXb-m5-QpA">
+                                                <rect key="frame" x="-197" y="403" width="1102" height="102"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="74"/>
+                                                <color key="textColor" red="0.35389269940000001" green="0.55450534330000001" blue="0.10481683260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;fat&quot;: 0.3," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzY-Xr-BAE">
+                                                <rect key="frame" x="-36" y="403" width="941" height="130"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="67"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;nutritions&quot;: {" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac2-RZ-Ebg">
+                                                <rect key="frame" x="52" y="403" width="1000" height="150"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="58"/>
+                                                <color key="textColor" red="0.79230084199999995" green="0.5704702331" blue="0.16643441549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;protein&quot;: 1.1," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fie-eN-FO8">
+                                                <rect key="frame" x="-3" y="403" width="1000" height="170"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="57"/>
+                                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;order&quot;: &quot;Sapindales&quot;," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppi-JU-ctY">
+                                                <rect key="frame" x="-132" y="403" width="1000" height="170"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="55"/>
+                                                <color key="textColor" red="0.74139815409999998" green="0.14441052800000001" blue="0.637895726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;family&quot;: &quot;Rutaceae&quot;," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebX-E9-lBU">
+                                                <rect key="frame" x="-197" y="403" width="845" height="102"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="85"/>
+                                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" &quot;carbohydrates&quot;: 9," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFx-l2-dYF">
+                                                <rect key="frame" x="-132" y="403" width="1000" height="170"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="57"/>
+                                                <color key="textColor" red="0.35389269940000001" green="0.55450534330000001" blue="0.10481683260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;name&quot;: &quot;Lemon&quot;," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oM-rr-Z6G">
+                                                <rect key="frame" x="-207" y="366" width="1000" height="176"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="85"/>
+                                                <color key="textColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;genus&quot;: &quot;Citrus&quot;," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDk-H8-MoI">
+                                                <rect key="frame" x="39" y="428" width="600" height="180"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
+                                                <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNH-aW-XiX">
                                         <rect key="frame" x="136" y="379" width="142" height="144"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -178,6 +247,15 @@
                         <outlet property="buttonMousse" destination="JzY-FO-Ur3" id="0PP-j0-e8L"/>
                         <outlet property="buttonProximo" destination="ekj-NX-PFP" id="BXs-dR-HdG"/>
                         <outlet property="imageMaracuja" destination="Go7-CN-44C" id="c3y-Te-s7X"/>
+                        <outlet property="label1" destination="QXb-m5-QpA" id="l9o-yY-YyS"/>
+                        <outlet property="label2" destination="SzY-Xr-BAE" id="PQh-Il-0ST"/>
+                        <outlet property="label3" destination="Ac2-RZ-Ebg" id="Aej-Dw-ZGj"/>
+                        <outlet property="label4" destination="fie-eN-FO8" id="rFM-Q0-B0y"/>
+                        <outlet property="label5" destination="ppi-JU-ctY" id="QOu-sL-89E"/>
+                        <outlet property="label6" destination="ebX-E9-lBU" id="520-jO-Pad"/>
+                        <outlet property="label7" destination="yFx-l2-dYF" id="xSk-GQ-04a"/>
+                        <outlet property="label8" destination="4oM-rr-Z6G" id="muZ-pr-Rj0"/>
+                        <outlet property="label9" destination="kDk-H8-MoI" id="WRC-DF-8VX"/>
                         <outlet property="semente" destination="yyG-22-akQ" id="IRp-tf-dix"/>
                         <outlet property="semente10" destination="8Gp-FZ-bX9" id="t5d-Rm-R0a"/>
                         <outlet property="semente2" destination="rBd-3u-z10" id="vE3-32-drc"/>
@@ -189,6 +267,7 @@
                         <outlet property="semente8" destination="cUe-6g-qyq" id="aUS-gQ-CuJ"/>
                         <outlet property="semente9" destination="4QT-Hm-qBM" id="h9H-uL-uDF"/>
                         <outlet property="viewCores" destination="4g8-P3-Qyk" id="ivd-uT-IFQ"/>
+                        <outlet property="viewLabel" destination="a0I-JA-jy4" id="Wug-QB-Sw8"/>
                         <outlet property="viewMaracuja" destination="WNH-aW-XiX" id="Ckq-iM-nig"/>
                     </connections>
                 </viewController>
@@ -245,62 +324,62 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;genus&quot;: &quot;Fragaria&quot;," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHG-bK-Ng0">
-                                        <rect key="frame" x="5" y="-12" width="421" height="53"/>
+                                        <rect key="frame" x="5" y="-12" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
                                         <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" &quot;name&quot;: &quot;Strawberry&quot;," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4S-r4-QKg">
-                                        <rect key="frame" x="331" y="678" width="865" height="176"/>
+                                        <rect key="frame" x="331" y="678" width="1000" height="230"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="85"/>
                                         <color key="textColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" &quot;family&quot;: &quot;Rosaceae&quot;," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-Si-kCl">
-                                        <rect key="frame" x="-799" y="574" width="845" height="102"/>
+                                        <rect key="frame" x="-799" y="574" width="1000" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="85"/>
                                         <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" &quot;calories&quot;: 29," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDT-rB-2lY">
-                                        <rect key="frame" x="335" y="121" width="845" height="102"/>
+                                        <rect key="frame" x="335" y="121" width="1000" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="74"/>
                                         <color key="textColor" red="0.35389269943183577" green="0.55450534326424872" blue="0.10481683264695059" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" &quot;carbohydrates&quot;: 5.5," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-No-E80">
-                                        <rect key="frame" x="-212" y="231" width="714" height="102"/>
+                                        <rect key="frame" x="-212" y="231" width="850" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="57"/>
                                         <color key="textColor" red="0.35389269940000001" green="0.55450534330000001" blue="0.10481683260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;order&quot;: &quot;Rosales&quot;," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5N-5e-GqL">
-                                        <rect key="frame" x="235" y="862" width="714" height="102"/>
+                                        <rect key="frame" x="235" y="862" width="850" height="250"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="55"/>
                                         <color key="textColor" red="0.7413981541450777" green="0.14441052803581458" blue="0.63789572598268052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;fat&quot;: 0.4," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWw-Uy-dDf">
-                                        <rect key="frame" x="-279" y="906" width="523" height="102"/>
+                                        <rect key="frame" x="-279" y="906" width="750" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="67"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;protein&quot;: 0," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MA8-6R-RRK">
-                                        <rect key="frame" x="-374" y="460" width="456" height="102"/>
+                                        <rect key="frame" x="-374" y="460" width="600" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="57"/>
                                         <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;nutritions&quot;: {" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCr-KL-oCM">
-                                        <rect key="frame" x="-103" y="116" width="347" height="102"/>
+                                        <rect key="frame" x="0.0" y="96" width="1257" height="102"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="58"/>
                                         <color key="textColor" red="0.79230084196891193" green="0.57047023310893652" blue="0.16643441547906518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -393,62 +472,62 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;genus&quot;: &quot;Citrus&quot;," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0X-gG-tak">
-                                        <rect key="frame" x="20" y="421" width="373" height="53"/>
+                                        <rect key="frame" x="20" y="421" width="1000" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
                                         <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;calories&quot;: 29," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzE-QT-Z9u">
-                                        <rect key="frame" x="-216" y="397" width="845" height="102"/>
+                                        <rect key="frame" x="-216" y="397" width="1000" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="74"/>
                                         <color key="textColor" red="0.35389269940000001" green="0.55450534330000001" blue="0.10481683260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;order&quot;: &quot;Sapindales&quot;," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7e-2j-Nr1">
-                                        <rect key="frame" x="-150" y="397" width="714" height="102"/>
+                                        <rect key="frame" x="-150" y="397" width="870" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="55"/>
                                         <color key="textColor" red="0.74139815409999998" green="0.14441052800000001" blue="0.637895726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;fat&quot;: 0.3," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vx4-ml-mWW">
-                                        <rect key="frame" x="-55" y="397" width="523" height="102"/>
+                                        <rect key="frame" x="-55" y="397" width="870" height="230"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="67"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;protein&quot;: 1.1," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRn-uS-OqV">
-                                        <rect key="frame" x="-21" y="397" width="456" height="102"/>
+                                        <rect key="frame" x="-21" y="397" width="650" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="57"/>
                                         <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;name&quot;: &quot;Lemon&quot;," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7g-RC-vfI">
-                                        <rect key="frame" x="-226" y="360" width="865" height="176"/>
+                                        <rect key="frame" x="-226" y="360" width="930" height="220"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="85"/>
                                         <color key="textColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" &quot;carbohydrates&quot;: 9," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXh-LH-qby">
-                                        <rect key="frame" x="-150" y="397" width="714" height="102"/>
+                                        <rect key="frame" x="-150" y="397" width="830" height="220"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="57"/>
                                         <color key="textColor" red="0.35389269940000001" green="0.55450534330000001" blue="0.10481683260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;family&quot;: &quot;Rutaceae&quot;," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UD9-pf-ubE">
-                                        <rect key="frame" x="-216" y="397" width="845" height="102"/>
+                                        <rect key="frame" x="-216" y="397" width="900" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="85"/>
                                         <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;nutritions&quot;: {" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyY-uj-Fpx">
-                                        <rect key="frame" x="33" y="397" width="347" height="102"/>
+                                        <rect key="frame" x="33" y="397" width="420" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="58"/>
                                         <color key="textColor" red="0.79230084199999995" green="0.5704702331" blue="0.16643441549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

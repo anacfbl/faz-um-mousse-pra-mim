@@ -81,19 +81,6 @@ import UIKit
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        loadSampleFrutinhas()
-        self.load()
-        self.navigationItem.setHidesBackButton(true, animated: true)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        loadSampleFrutinhas()
-        self.load()
-        self.navigationItem.setHidesBackButton(true, animated: true)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

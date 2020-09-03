@@ -12,7 +12,9 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var frutinhas = [Frutinha]()
     var contador = 0
+    var sementes: [UIImageView] = []
     
+    @IBOutlet weak var viewLabel: UIView!
     @IBOutlet weak var semente: UIImageView!
     @IBOutlet weak var semente2: UIImageView!
     @IBOutlet weak var semente3: UIImageView!
@@ -38,6 +40,46 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var maracuja = UIImage.init (named: "maracuja-1")
     
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label4: UILabel!
+    @IBOutlet weak var label5: UILabel!
+    @IBOutlet weak var label6: UILabel!
+    @IBOutlet weak var label7: UILabel!
+    @IBOutlet weak var label8: UILabel!
+    @IBOutlet weak var label9: UILabel!
+    @IBOutlet weak var label10: UILabel!
+    
+    
+    func piscaLabel() {
+        
+        UIView.animate(withDuration: 2, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+            
+            self.label1.center = CGPoint(x: 200, y:1500)
+            self.label2.center = CGPoint(x: -10, y:200)
+            self.label3.center = CGPoint(x: 400, y:50)
+        })
+        
+        UIView.animate(withDuration: 1.5, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+            
+            self.label4.center = CGPoint(x: 300, y:20)
+            self.label5.center = CGPoint(x: -80, y:1000)
+        })
+        
+        UIView.animate(withDuration: 1, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+            
+            self.label6.center = CGPoint(x: -250, y:1000)
+            self.label7.center = CGPoint(x: 10, y:100)
+        })
+        
+        UIView.animate(withDuration: 0.5, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+            
+            self.label8.center = CGPoint(x: 400, y:800)
+            self.label9.center = CGPoint(x: 350, y:700)
+        })
+        
+    } // pisca label
     
     @IBAction func tocouMousse(_ sender: Any) {
         buttonProximo.isHidden = false
@@ -49,9 +91,25 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
         }
     }
     
+    func trocaLabels() {
+        label1.text = "Maracujá"
+        label2.text = "\(frutinhas[0].familiaDaFrutinha)"
+        label3.text = "\(frutinhas[0].generoDaFrutinha)"
+        label4.text = "\(frutinhas[0].ordemDaFrutinha)"
+        label5.text = "\(frutinhas[0].carboidratosDaFrutinha)g de carboidratos"
+        label6.text = "\(frutinhas[0].proteinasDaFrutinha)g de proteínas"
+        label7.text = "\(frutinhas[0].gordurasDaFrutinha)g de gorduras"
+        label8.text = "\(frutinhas[0].caloriasDaFrutinha) de calorias"
+        label9.text = "\(frutinhas[0].acucaresDaFrutinha)g de açúcar"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        trocaLabels()
+        self.sementes = [semente, semente2, semente3, semente4, semente5, semente6, semente7, semente8, semente9, semente10]
         print(frutinhas)
+        piscaLabel()
+        viewLabel.backgroundColor = .clear
         
         buttonProximo.isHidden = true
         buttonMousse.isHidden = true
@@ -144,7 +202,7 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
                 viewMaracuja.addSubview(recognizer.view!)
                 print(recognizer.view?.frame)
                 
-                if contador == 1 {
+                if self.sementes.count == 1 {
                     buttonMousse.isHidden = false
                     viewMaracuja.isHidden = true
             
@@ -159,8 +217,13 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
                     semente9.isHidden = true
                     semente10.isHidden = true
                     
+                    viewLabel.isHidden = true
+                    
                 } else {
-                    contador += 1
+                    self.sementes = self.sementes.filter {
+                        $0 != recognizer.view
+                    }
+                    recognizer.view?.isUserInteractionEnabled = false
                     
                 }
                 

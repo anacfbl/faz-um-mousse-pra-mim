@@ -124,13 +124,20 @@ import UIKit
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+        if clearBack == false {
         self.view.backgroundColor = .black
+        } else {
+            self.view.backgroundColor = .clear
+        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
+    
+    var clearBack = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -139,6 +146,7 @@ import UIKit
         viewNome.backgroundColor = .clear
         buttonInicial.isHidden = true
         view.backgroundColor = .black
+        clearBack = true
         
         
     } // fecha view DidLoad

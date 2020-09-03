@@ -35,30 +35,30 @@ class MorangoViewController: UIViewController {
     
     func piscaLabel() {
         
-        UIView.animate(withDuration: 2, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+        UIView.animate(withDuration: 2.5, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
             
             self.label1.center = CGPoint(x: 200, y:1500)
             self.label2.center = CGPoint(x: 200, y:200)
             self.label3.center = CGPoint(x: 400, y:50)
         })
         
-        UIView.animate(withDuration: 1.5, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+        UIView.animate(withDuration: 2, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
             
             self.label4.center = CGPoint(x: 300, y:20)
             self.label5.center = CGPoint(x: 80, y:1000)
         })
         
-        UIView.animate(withDuration: 1, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+        UIView.animate(withDuration: 1.5, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
             
             self.label6.center = CGPoint(x: 250, y:1000)
             self.label7.center = CGPoint(x: -10, y:100)
+            self.label10.center = CGPoint(x: -50, y:300)
         })
         
-        UIView.animate(withDuration: 0.5, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+        UIView.animate(withDuration: 1, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
             
             self.label8.center = CGPoint(x: 300, y:200)
             self.label9.center = CGPoint(x: 350, y:460)
-            self.label10.center = CGPoint(x: 400, y:100)
         })
         
     } // pisca label
@@ -122,9 +122,22 @@ class MorangoViewController: UIViewController {
         }
     }
     
+    func trocaLabels() {
+        label1.text = "Morango"
+        label2.text = "\(frutinhas[1].familiaDaFrutinha)"
+        label3.text = "\(frutinhas[1].generoDaFrutinha)"
+        label4.text = "\(frutinhas[1].ordemDaFrutinha)"
+        label5.text = "\(frutinhas[1].carboidratosDaFrutinha)g de carboidratos"
+        label6.text = "\(frutinhas[1].proteinasDaFrutinha)g de proteínas"
+        label7.text = "\(frutinhas[1].gordurasDaFrutinha)g de gorduras"
+        label8.text = "\(frutinhas[1].caloriasDaFrutinha) de calorias"
+        label9.text = "\(frutinhas[1].acucaresDaFrutinha)g de açúcar"
+        label10.text = "Moranguinho do Nordeste"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        trocaLabels()
         piscaLabel()
         buttonProximo.isHidden = true
         viewMorango.backgroundColor = .clear
