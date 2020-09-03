@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Frutinha Table View Controller-->
+        <!--As Frutinhas-->
         <scene sceneID="5e5-5r-MYD">
             <objects>
                 <viewController storyboardIdentifier="FrutinhaTableViewController" id="mRd-fS-Nbm" customClass="FrutinhaTableViewController" customModule="Faz_um_Mousse_pra_mim_" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K6k-Q4-hlr">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -221,6 +221,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ek9-ex-iIF"/>
                     </view>
+                    <navigationItem key="navigationItem" title="As Frutinhas" largeTitleDisplayMode="always" id="tLH-oQ-Bui">
+                        <barButtonItem key="rightBarButtonItem" title="Início" id="agB-E6-rdw">
+                            <connections>
+                                <segue destination="PrY-Vc-T7o" kind="show" id="j6i-hv-qGf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="K6k-Q4-hlr" id="Rft-T0-Imv"/>
                     </connections>
@@ -228,6 +235,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6i-Na-jIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="111.59420289855073" y="89.732142857142847"/>
+        </scene>
+        <!--MainViewController-->
+        <scene sceneID="EzF-uB-Wiq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MainViewController" id="PrY-Vc-T7o" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="m7b-2A-I5M"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4u-9u-de7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="41"/>
         </scene>
     </scenes>
 </document>
