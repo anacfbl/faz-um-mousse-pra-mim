@@ -56,7 +56,7 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
         
         UIView.animate(withDuration: 2, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
             
-            self.label1.center = CGPoint(x: 200, y:1500)
+            self.label1.center = CGPoint(x: 200, y:800)
             self.label2.center = CGPoint(x: -10, y:200)
             self.label3.center = CGPoint(x: 400, y:50)
         })
@@ -101,6 +101,10 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
         label7.text = "\(frutinhas[0].gordurasDaFrutinha)g de gorduras"
         label8.text = "\(frutinhas[0].caloriasDaFrutinha) de calorias"
         label9.text = "\(frutinhas[0].acucaresDaFrutinha)g de açúcar"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     override func viewDidLoad() {

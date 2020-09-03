@@ -39,7 +39,7 @@ class LimaoViewController: UIViewController, UIGestureRecognizerDelegate {
         
         UIView.animate(withDuration: 2, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
             
-            self.label1.center = CGPoint(x: 200, y:1500)
+            self.label1.center = CGPoint(x: 200, y:500)
             self.label2.center = CGPoint(x: -10, y:200)
             self.label3.center = CGPoint(x: 400, y:50)
         })
