@@ -15,10 +15,52 @@ class MorangoViewController: UIViewController {
     @IBOutlet weak var buttonMousseMorango: UIButton!
     
     @IBOutlet weak var viewMorango: UIView!
+    @IBOutlet weak var viewLabel: UIView!
     @IBOutlet weak var viewCores: UIView!
     
     var contador = 0
     
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label4: UILabel!
+    @IBOutlet weak var label5: UILabel!
+    @IBOutlet weak var label6: UILabel!
+    @IBOutlet weak var label7: UILabel!
+    @IBOutlet weak var label8: UILabel!
+    @IBOutlet weak var label9: UILabel!
+    @IBOutlet weak var label10: UILabel!
+    
+    
+    func piscaLabel() {
+        
+        UIView.animate(withDuration: 2, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+            
+            self.label1.center = CGPoint(x: 200, y:1500)
+            self.label2.center = CGPoint(x: 200, y:200)
+            self.label3.center = CGPoint(x: 400, y:50)
+        })
+        
+        UIView.animate(withDuration: 1.5, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+            
+            self.label4.center = CGPoint(x: 300, y:20)
+            self.label5.center = CGPoint(x: 80, y:1000)
+        })
+        
+        UIView.animate(withDuration: 1, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+            
+            self.label6.center = CGPoint(x: 250, y:1000)
+            self.label7.center = CGPoint(x: -10, y:100)
+        })
+        
+        UIView.animate(withDuration: 0.5, delay: 0, options: [.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+            
+            self.label8.center = CGPoint(x: 300, y:200)
+            self.label9.center = CGPoint(x: 350, y:460)
+            self.label10.center = CGPoint(x: 400, y:100)
+        })
+        
+    } // pisca label
     
     
     @IBAction func tocouMorango(_ sender: Any) {
@@ -37,6 +79,8 @@ class MorangoViewController: UIViewController {
         if contador == 12 {
             buttonMousseMorango.isHidden = false
             viewMorango.isHidden = true
+            viewLabel.isHidden = true
+            
         }
         
     } // fechou action tocou morango
@@ -45,13 +89,10 @@ class MorangoViewController: UIViewController {
     
     @IBAction func tocouMousse(_ sender: Any) {
         buttonProximo.isHidden = false
-        
     }
     
     
-    @IBAction func gestureMogango(_ sender: Any) {
-        
-    }
+    @IBAction func gestureMogango(_ sender: Any) {}
     
     
     // tocou fora do morango:
@@ -79,17 +120,17 @@ class MorangoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        piscaLabel()
         buttonProximo.isHidden = true
         viewMorango.backgroundColor = .clear
         buttonMousseMorango.isHidden = true
+        viewLabel.backgroundColor = .clear
         
         
         UIView.animate(withDuration: 1, delay: 0.0, options:[.allowUserInteraction, UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
             self.viewCores.backgroundColor = .yellow
             self.viewCores.backgroundColor = .cyan
         }, completion: nil)
-        
         
         
         

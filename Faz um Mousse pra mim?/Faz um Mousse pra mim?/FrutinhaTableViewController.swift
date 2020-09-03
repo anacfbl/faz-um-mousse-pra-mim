@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FrutinhaTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+ class FrutinhaTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //MARK: Properties
     @IBOutlet weak var tableView: UITableView!

@@ -112,7 +112,6 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var inicialPosition = CGPoint.zero
     
-    
     @objc func dragged(_ recognizer:UIPanGestureRecognizer){
         
         switch recognizer.state {
@@ -132,7 +131,7 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
             
             if viewMaracuja.frame.contains(recognizer.location(in: self.view)) {
                 
-                if contador == 9 {
+                if contador == 1 {
                     buttonMousse.isHidden = false
                     viewMaracuja.isHidden = true
             
@@ -204,7 +203,4 @@ class MaracujaViewController: UIViewController, UIGestureRecognizerDelegate {
 
 
 
-
-
-//     tocou fora do maracuja:
 

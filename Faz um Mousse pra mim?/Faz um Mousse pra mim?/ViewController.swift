@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+ class ViewController: UIViewController {
     
 
     @IBOutlet weak var buttonInicial: UIButton!
@@ -41,10 +41,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-          viewNome.backgroundColor = .clear
+        
+
+        viewNome.backgroundColor = .clear
         buttonInicial.isHidden = true
         view.backgroundColor = .black
-
+        
+       
         
     } // fecha view DidLoad
 
@@ -52,5 +55,3 @@ class ViewController: UIViewController {
 } // fecha view controller
 
 
-
-//options:[UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse],
