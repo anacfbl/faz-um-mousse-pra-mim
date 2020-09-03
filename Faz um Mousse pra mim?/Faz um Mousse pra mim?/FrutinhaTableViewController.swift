@@ -13,25 +13,25 @@ class FrutinhaTableViewController: UIViewController, UITableViewDelegate, UITabl
     //MARK: Properties
     @IBOutlet weak var tableView: UITableView!
     
-    var frutinhas = [Frutinha]()
+    public var frutinhas = [Frutinha]()
     var fruity: [Fruity] = []
     
     //MARK: Private Methods
-    private func loadSampleFrutinhas(){
+    public func loadSampleFrutinhas(){
         let fotoLimao = UIImage(named: "limao-1") ??  UIImage()
         let fotoMorango = UIImage(named: "morando-1") ?? UIImage()
         let fotoMaracuja = UIImage(named: "maracujasemente-1") ?? UIImage()
         
-        let limao = Frutinha(fotoFrutinha: fotoLimao, nomeDaFrutinha: "Limão", familiaDaFrutinha: "Silva", generoDaFrutinha: "Masculinah", ordemDaFrutinha: "Primeira", carboidratosDaFrutinha: 10, proteinasDaFrutinha: 100, gordurasDaFrutinha: 30, caloriasDaFrutinha: 99, acucaresDaFrutinha: 666)
+        let limao = Frutinha(fotoFrutinha: fotoLimao, nomeDaFrutinha: "Limão", familiaDaFrutinha: "", generoDaFrutinha: "", ordemDaFrutinha: "", carboidratosDaFrutinha: 0, proteinasDaFrutinha: 0, gordurasDaFrutinha: 0, caloriasDaFrutinha: 0, acucaresDaFrutinha: 0)
         
-        let morango = Frutinha(fotoFrutinha: fotoMorango, nomeDaFrutinha: "Morango", familiaDaFrutinha: "Moreira", generoDaFrutinha: "Masculinah", ordemDaFrutinha: "Segunda", carboidratosDaFrutinha: 10, proteinasDaFrutinha: 100, gordurasDaFrutinha: 30, caloriasDaFrutinha: 99, acucaresDaFrutinha: 666)
+        let morango = Frutinha(fotoFrutinha: fotoMorango, nomeDaFrutinha: "Morango", familiaDaFrutinha: "", generoDaFrutinha: "", ordemDaFrutinha: "", carboidratosDaFrutinha: 0, proteinasDaFrutinha: 0, gordurasDaFrutinha: 0, caloriasDaFrutinha: 0, acucaresDaFrutinha: 0)
         
-        let maracuja = Frutinha(fotoFrutinha: fotoMaracuja, nomeDaFrutinha: "Maracujá", familiaDaFrutinha: "Passifloraceae", generoDaFrutinha: "Passiflora", ordemDaFrutinha: "Malpighiales", carboidratosDaFrutinha: 23, proteinasDaFrutinha: 2.2, gordurasDaFrutinha: 0.7, caloriasDaFrutinha: 97, acucaresDaFrutinha: 11)
+        let maracuja = Frutinha(fotoFrutinha: fotoMaracuja, nomeDaFrutinha: "Maracujá", familiaDaFrutinha: "", generoDaFrutinha: "", ordemDaFrutinha: "", carboidratosDaFrutinha: 0, proteinasDaFrutinha: 0, gordurasDaFrutinha: 0, caloriasDaFrutinha: 0, acucaresDaFrutinha: 0)
         
         frutinhas += [maracuja, morango, limao]
     }
     
-    func load() {
+    public func load() {
         // TODO: Carregar dados do webservice
         let url = URL(string: "https://www.fruityvice.com/api/fruit/all")!
         let task = URLSession.shared.dataTask(with: url){data, response, error in
@@ -56,6 +56,14 @@ class FrutinhaTableViewController: UIViewController, UITableViewDelegate, UITabl
                 self.frutinhas[1].caloriasDaFrutinha = fruity[10].nutritions.calories
                 self.frutinhas[1].acucaresDaFrutinha = fruity[10].nutritions.sugar
                 
+                self.frutinhas[0].familiaDaFrutinha = "Passifloraceae"
+                self.frutinhas[0].generoDaFrutinha = "Passiflora"
+                self.frutinhas[0].ordemDaFrutinha = "Malpighiales"
+                self.frutinhas[0].carboidratosDaFrutinha = 23
+                self.frutinhas[0].proteinasDaFrutinha = 2.2
+                self.frutinhas[0].gordurasDaFrutinha = 0.7
+                self.frutinhas[0].caloriasDaFrutinha = 97
+                self.frutinhas[0].acucaresDaFrutinha = 11
                 
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
